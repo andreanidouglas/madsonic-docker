@@ -13,7 +13,7 @@ MADSONIC_HTTPS_PORT=0
 MADSONIC_CONTEXT_PATH=/
 MADSONIC_INIT_MEMORY=256
 MADSONIC_MAX_MEMORY=512
-MADSONIC_DEFAULT_MUSIC_FOLDER=/var/media/artists
+MADSONIC_DEFAULT_MUSIC_FOLDER=/var/music
 MADSONIC_DEFAULT_UPLOAD_FOLDER=/var/media/incoming
 MADSONIC_DEFAULT_PODCAST_FOLDER=/var/media/podcast
 MADSONIC_DEFAULT_PLAYLIST_IMPORT_FOLDER=/var/media/playlists/import
@@ -179,4 +179,4 @@ ${JAVA} -Xms${MADSONIC_INIT_MEMORY}m -Xmx${MADSONIC_MAX_MEMORY}m \
   -Dmadsonic.gzip=${MADSONIC_GZIP} \
   -Dmadsonic.db="${MADSONIC_DB}" \
   -Djava.awt.headless=true \
-  -jar madsonic-booter.jar > ${LOG} 2>&1
+  -jar madsonic-booter.jar 
